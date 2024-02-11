@@ -99,7 +99,7 @@ const Signup = () => {
       console.log('Form data:', formData);
       try {
         const response = await axios.post(
-          'http://localhost:3000/api/v1/user/signup',
+          'https://paytm-4u63.onrender.com/api/v1/user/signup',
           formData
         );
         localStorage.setItem('token', response.data.token);

@@ -31,7 +31,7 @@ const Navbar = () => {
   const handleTokenRefresh = async () => {
     const token = localStorage.getItem('token');
     const response = await axios.get(
-      'http://localhost:3000/api/v1/user/loggedInUser',
+      'https://paytm-4u63.onrender.com/api/v1/user/loggedInUser',
       {
         headers: {
           Authorization: token,

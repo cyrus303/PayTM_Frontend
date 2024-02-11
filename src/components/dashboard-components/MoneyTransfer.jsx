@@ -58,7 +58,7 @@ const MoneyTransfer = ({user}) => {
 
       try {
         const response = await axios.post(
-          'http://localhost:3000/api/v1/account/transfer',
+          'https://paytm-4u63.onrender.com/api/v1/account/transfer',
           payload,
           {
             headers: {

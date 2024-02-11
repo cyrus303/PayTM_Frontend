@@ -24,7 +24,7 @@ const UserDetails = () => {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.get(
-        `http://localhost:3000/api/v1/user/bulk/?filter=${encodeURIComponent(
+        `https://paytm-4u63.onrender.com/api/v1/user/bulk/?filter=${encodeURIComponent(
           filter
         )}`,
         {
